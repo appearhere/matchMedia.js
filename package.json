@@ -1,7 +1,7 @@
 {
   "name": "@appearhere/universal-matchmedia-polyfill",
   "description": "matchMedia polyfill for testing media queries in JS",
-  "version": "0.3.0",
+  "version": "1.0.0",
   "homepage": "http://github.com/appearhere/matchMedia.js",
   "repository": {
     "type": "git",
