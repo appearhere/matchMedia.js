@@ -1,15 +1,15 @@
-[![npm](https://img.shields.io/npm/v/matchmedia-polyfill.svg)](https://npmjs.com/package/matchmedia-polyfill)
+# Universal matchMedia() polyfill
 
-#matchMedia() polyfill
+Pretty much exactly the same as [original matchMedia](https://github.com/paulirish/matchMedia.js) polyfill, but with the addition for a check of the existance of `window` and `document` so the polyfill can be used in an Universal (isomorphic) environment.
 
 ## test whether a CSS media type or media query applies
 
-* **Authors**: Scott Jehl, Paul Irish, Nicholas Zakas 
+* **Original Authors**: Scott Jehl, Paul Irish, Nicholas Zakas
 * **Spec**: [dev.w3.org/csswg/cssom-view/#dom-window-matchmedia](http://dev.w3.org/csswg/cssom-view/#dom-window-matchmedia)
 * **Native support**: Chrome [since m10](http://trac.webkit.org/changeset/72552), Firefox [since 6](https://developer.mozilla.org/en/Firefox/Releases/6), and Safari [since 5.1](https://developer.mozilla.org/en/DOM/window.matchMedia#Browser_compatibility)
 
 ### How about resizing the browser?
-Paul Hayes [tackled this using CSS transitions and their transitionEnd event](http://www.paulrhayes.com/2011-11/use-css-transitions-to-link-media-queries-and-javascript/) 
+Paul Hayes [tackled this using CSS transitions and their transitionEnd event](http://www.paulrhayes.com/2011-11/use-css-transitions-to-link-media-queries-and-javascript/)
 
 His code: https://github.com/fofr/matchMedia.js -- though currently it doesnt support IE6-9, since they dont have transitions, obviously. :)
 
@@ -25,14 +25,14 @@ His code: https://github.com/fofr/matchMedia.js -- though currently it doesnt su
     if (matchMedia('only screen and (max-width: 480px)').matches) {
       // smartphone/iphone... maybe run some small-screen related dom scripting?
     }
-    
+
 #### test landscape orientation
     if (matchMedia('all and (orientation:landscape)').matches) {
       // probably tablet in widescreen view
     }
 
 
-## Used in: 
+## Used in:
 
 * [Respond.js](https://github.com/scottjehl/Respond)
 * [FormFactor](https://github.com/PaulKinlan/formfactor)
